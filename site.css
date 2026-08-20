@@ -1,0 +1,137 @@
+/* General page styling */
+body {
+  font-family: 'Poppins', Arial, Verdana, sans-serif; /* new font */
+  font-size: 16px;
+  background-color: #5599cc;
+  color: #112244;
+  margin: 0;
+}
+
+/* Top navigation menu centered */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #5588cc; /* unified blue */
+  display: flex;
+  justify-content: center;   /* center menu */
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px 18px;
+  color: #ffffff;            /* white letters */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #3377aa; /* darker blue hover */
+  border-radius: 6px;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5588cc;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  padding: 10px 14px;
+  color: #ffffff;            /* white letters */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* COMPANY header */
+#main {
+  padding: 20px;
+  background-color: #5588cc; /* same blue */
+  border-radius: 25px;
+  text-align: center;        /* centers COMPANY + logo */
+}
+
+#main h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #ffffff;            /* white text */
+}
+
+/* Banner section */
+.banner {
+  text-align: center;
+  margin: 20px 0;
+  background-color: #5588cc; /* same blue background */
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: inline-block;
+}
+/* Division background under banner */
+.buttons-section {
+  background-color: #5588cc; /* full-width blue background */
+  width: 100%;              /* stretches across the page */
+  padding: 30px 0;           /* vertical spacing */
+  text-align: center;        /* centers everything inside */
+}
+
+/* Table layout for image buttons */
+.table-buttons {
+  width: 80%;                /* centered table */
+  margin: 0 auto;            /* centers beneath banner */
+  background-color: #5588cc; /* same blue background */
+  border-radius: 12px;
+  padding: 20px;
+  border-collapse: collapse; /* neat row */
+  text-align: center;        /* centers all content */
+}
+
+.table-buttons tr {
+  text-align: center;        /* centers row content */
+}
+
+.table-buttons td {
+  text-align: center;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.table-buttons h2 {
+  color: #ffffff;            /* white titles */
+  margin-bottom: 10px;
+}
+
+.table-buttons img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.table-buttons img:hover {
+  transform: scale(1.05);    /* zoom effect */
+  opacity: 0.9;              /* fade effect */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #5588cc;
+  color: #ffffff;
+}
